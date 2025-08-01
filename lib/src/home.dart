@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:icons_plus/icons_plus.dart';
+import 'package:wordly/src/home/play.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -34,13 +36,30 @@ class _HomeState extends State<Home> {
           IconButton(
             onPressed: () {},
             icon: Icon(
-              Icons.settings,
+              Iconsax.chart_square_outline,
+            ),
+          ),
+          SizedBox(
+            width: 3,
+          ),
+          IconButton(
+            onPressed: () {},
+            icon: Icon(
+              Iconsax.setting_2_outline,
             ),
           ),
         ],
       ),
-      body: Column(
-        children: [],
+      body: SingleChildScrollView(
+        padding: EdgeInsets.symmetric(
+          vertical: 20,
+          horizontal: 5,
+        ),
+        child: Column(
+          children: [
+            Play(),
+          ],
+        ),
       ),
     );
   }

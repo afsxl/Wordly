@@ -26,6 +26,7 @@ class _MyAppState extends State<MyApp> {
       valueListenable: themeNotifier,
       builder: (context, mode, _) {
         return MaterialApp(
+          debugShowCheckedModeBanner: false,
           title: 'Wordly',
           themeMode: mode,
           theme: lightTheme,

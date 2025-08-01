@@ -8,6 +8,11 @@ ThemeData darkTheme = ThemeData(
       iconColor: WidgetStateColor.resolveWith((states) => Colors.white),
     ),
   ),
+  textTheme: TextTheme(
+    bodyMedium: GoogleFonts.delius(
+      color: Colors.white,
+    ),
+  ),
   appBarTheme: AppBarTheme(
     backgroundColor: Colors.black,
     titleTextStyle: GoogleFonts.delius(
